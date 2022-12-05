@@ -10,15 +10,18 @@ Para o corpo ser divido na estutura inicial pedida no exercicio de 4 colunas e 4
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr 1fr;
+Adicionamos gap no container corpo para incluir uma margem entre os elementos que somado ao novo valor do padding temos a margem anterior.
+Mesma funcionalidade porém mais facil para manutenção.
 */
 .corpo{
     background-color: #444444;
-    padding: 8px;
+    padding: 16px;
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 16px;
 }
 
 /*
@@ -31,7 +34,6 @@ grid-column: span 4 (4 colunas)
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    margin: 8px;
     grid-column: span 4;
 }
 
@@ -45,7 +47,6 @@ grid-row: span 3 (3 linhas)
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    margin: 8px;
     grid-row: span 3;
 }
 
@@ -61,7 +62,6 @@ grid-column: span 3 (3 colunas)
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    margin: 8px;
     grid-column: span 2;
     grid-row: span 3;
 }
@@ -71,7 +71,6 @@ grid-column: span 3 (3 colunas)
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    margin: 8px;
 }
 
 /*
@@ -85,6 +84,5 @@ grid-row: span 2 (2 linhas)
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    margin: 8px;
     grid-row: span 2;
 }
